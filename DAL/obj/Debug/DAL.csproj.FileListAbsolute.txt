@@ -1,0 +1,10 @@
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\DAL.dll.config
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\DAL.dll
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\DAL.pdb
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\EntityFramework.dll
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\EntityFramework.xml
+C:\MVCTutorials\Web.Transport\DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\MVCTutorials\Web.Transport\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+C:\MVCTutorials\Web.Transport\DAL\obj\Debug\DAL.dll
+C:\MVCTutorials\Web.Transport\DAL\obj\Debug\DAL.pdb

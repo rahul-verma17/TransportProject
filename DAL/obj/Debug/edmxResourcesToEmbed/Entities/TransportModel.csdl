@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TransportDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tbl_masterFuelStation">
+    <Key>
+      <PropertyRef Name="stationID" />
+    </Key>
+    <Property Name="stationID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="stationname" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isdeleted" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="tbl_masterFuelType">
+    <Key>
+      <PropertyRef Name="fueltypeid" />
+    </Key>
+    <Property Name="fueltypeid" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fueltype" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="tbl_masterbus">
+    <Key>
+      <PropertyRef Name="busid" />
+      <PropertyRef Name="busnumber" />
+    </Key>
+    <Property Name="busid" Type="Int32" Nullable="false" />
+    <Property Name="busnumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="isdeleted" Type="Boolean" />
+  </EntityType>
+  <EntityContainer Name="TransportDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_masterFuelStation" EntityType="Self.tbl_masterFuelStation" />
+    <EntitySet Name="tbl_masterFuelType" EntityType="Self.tbl_masterFuelType" />
+    <EntitySet Name="tbl_masterbus" EntityType="Self.tbl_masterbus" />
+  </EntityContainer>
+</Schema>

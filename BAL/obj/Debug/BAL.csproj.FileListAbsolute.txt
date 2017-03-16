@@ -1,0 +1,4 @@
+C:\MVCTutorials\Web.Transport\BAL\bin\Debug\BAL.dll
+C:\MVCTutorials\Web.Transport\BAL\bin\Debug\BAL.pdb
+C:\MVCTutorials\Web.Transport\BAL\obj\Debug\BAL.dll
+C:\MVCTutorials\Web.Transport\BAL\obj\Debug\BAL.pdb

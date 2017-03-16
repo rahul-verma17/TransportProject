@@ -1,0 +1,4 @@
+C:\MVCTutorials\Web.Transport\EntitiesDomain\bin\Debug\EntitiesDomain.dll
+C:\MVCTutorials\Web.Transport\EntitiesDomain\bin\Debug\EntitiesDomain.pdb
+C:\MVCTutorials\Web.Transport\EntitiesDomain\obj\Debug\EntitiesDomain.dll
+C:\MVCTutorials\Web.Transport\EntitiesDomain\obj\Debug\EntitiesDomain.pdb

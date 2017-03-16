@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TransportDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TransportDB.dbo.tbl_masterbus' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="tbl_masterbus">
+    <Key>
+      <PropertyRef Name="busid" />
+      <PropertyRef Name="busnumber" />
+    </Key>
+    <Property Name="busid" Type="int" Nullable="false" />
+    <Property Name="busnumber" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="isdeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_masterFuelStation">
+    <Key>
+      <PropertyRef Name="stationID" />
+    </Key>
+    <Property Name="stationID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="stationname" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="isdeleted" Type="bit" />
+  </EntityType>
+  <EntityType Name="tbl_masterFuelType">
+    <Key>
+      <PropertyRef Name="fueltypeid" />
+    </Key>
+    <Property Name="fueltypeid" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="fueltype" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="TransportDBModelStoreContainer">
+    <EntitySet Name="tbl_masterFuelStation" EntityType="Self.tbl_masterFuelStation" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_masterFuelType" EntityType="Self.tbl_masterFuelType" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_masterbus" EntityType="Self.tbl_masterbus" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [tbl_masterbus].[busid] AS [busid], 
+    [tbl_masterbus].[busnumber] AS [busnumber], 
+    [tbl_masterbus].[isdeleted] AS [isdeleted]
+    FROM [dbo].[tbl_masterbus] AS [tbl_masterbus]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

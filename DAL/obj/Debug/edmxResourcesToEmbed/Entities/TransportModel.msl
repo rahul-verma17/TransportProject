@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TransportDBModelStoreContainer" CdmEntityContainer="TransportDBEntities">
+    <EntitySetMapping Name="tbl_masterFuelStation">
+      <EntityTypeMapping TypeName="TransportDBModel.tbl_masterFuelStation">
+        <MappingFragment StoreEntitySet="tbl_masterFuelStation">
+          <ScalarProperty Name="stationID" ColumnName="stationID" />
+          <ScalarProperty Name="stationname" ColumnName="stationname" />
+          <ScalarProperty Name="isdeleted" ColumnName="isdeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_masterFuelType">
+      <EntityTypeMapping TypeName="TransportDBModel.tbl_masterFuelType">
+        <MappingFragment StoreEntitySet="tbl_masterFuelType">
+          <ScalarProperty Name="fueltypeid" ColumnName="fueltypeid" />
+          <ScalarProperty Name="fueltype" ColumnName="fueltype" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_masterbus">
+      <EntityTypeMapping TypeName="TransportDBModel.tbl_masterbus">
+        <MappingFragment StoreEntitySet="tbl_masterbus">
+          <ScalarProperty Name="busid" ColumnName="busid" />
+          <ScalarProperty Name="busnumber" ColumnName="busnumber" />
+          <ScalarProperty Name="isdeleted" ColumnName="isdeleted" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
