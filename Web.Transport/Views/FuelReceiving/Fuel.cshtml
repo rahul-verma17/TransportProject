@@ -1,0 +1,99 @@
+﻿
+@{
+    ViewBag.Title = "Fuel";
+    Layout = "~/Views/Shared/_Transport.cshtml";
+}
+
+@using (Html.BeginForm("Fuel", "FuelReceiving"))
+{
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <b>Add Fuel</b>
+        </div>
+        <div class="panel-body">
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <label class="control-label col-md-2">Station Name</label>
+                    <div class="col-md-4">
+                        <select class="form-control">
+                            <option value="0" selected="selected">Select Station</option>
+                            <option value="1">Kotdwar</option>
+                            <option value="2">Chamoli</option>
+                            <option value="3">Corbet</option>
+                            <option value="4">Rishikesh</option>
+                        </select>
+                    </div>
+                    <label class="control-label col-md-2">Fuel Type</label>
+                    <div class="col-md-4">
+                        <select class="form-control">
+                            <option value="0" selected="selected">Select Fuel Type</option>
+                            <option value="1">Diesel</option>
+                            <option value="2">Petrol</option>
+                            <option value="3">Kirosene</option>
+                            <option value="4">Mobile</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Quantity</label>
+                    <div class="col-md-2"><input type="text" id="txtquantity" class="form-control" /></div>
+                    <label class="control-label col-md-offset-2 col-md-2">Price</label>
+                    <div class="col-md-2"><input type="text" id="txtprice" class="form-control" /></div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="form-group">
+                    <label class="control-label col-md-2">Vechile Number</label>
+                    <div class="col-md-2"><input type="text" id="txtvechileno" class="form-control" /></div>
+                    <label class="control-label col-md-offset-2 col-md-2">Comment</label>
+                    <div class="col-md-4"><input type="text" id="txtcomment" class="form-control" /></div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="panel-footer text-right">
+            <button type="submit" class="btn btn-primary">Save</button>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <b>Fuel Recieving Entry</b>
+        </div>
+        <table class="table table-striped table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th>#.</th>
+                    <th>Fuel Type</th>
+                    <th>Recieving Price</th>
+                    <th>Recieving Quantity</th>
+                    <th>Total Amount</th>
+                    <th>Recieving Date</th>
+                    <th>Vechile Number</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Diesel</td>
+                    <td>71.11</td>
+                    <td>500</td>
+                    <td>35555</td>
+                    <td>27/12/2016</td>
+                    <td>Not Available</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Petrol</td>
+                    <td>60</td>
+                    <td>100000</td>
+                    <td>6000000</td>
+                    <td>07/03/2017</td>
+                    <td>HR27-9898</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="clearfix"></div>
+
+}
